@@ -80,6 +80,25 @@ A link can also be styled as a button, by using CSS:
                 }
                 </style>
 
+
+<!--
+    Width and Height, or Style?
+The width, height, and style attributes are all valid in HTML.
+
+However, we suggest using the style attribute. It prevents styles sheets from changing the size of images:
+-->
+
+
+
+                <style>
+                img {
+                width: 100%;
+                }
+                </style>
+
+
+
+
             
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
@@ -371,7 +390,90 @@ First, use the id attribute to create a bookmark:
             <a href="html_demo.html#C4">Jump to Chapter 4</a>
             <br>
             <br>
+
+            <!--Exercise:
+Use the correct HTML to make the text below into a link to "default.html".-->
             
+            <a href="default.html">Visit our HTML tutorial.</a>
+            <br>
+            <br>
+
+            <!-- Exercise:
+Use CSS to remove the underline from the link.-->
+
+            <a href="html_images.asp" style="
+text-decoration:none;
+">HTML Images</a>
+<br>
+<br>
+
+<!--Exercise:
+Use the correct HTML attribute to make the link open in a new window.-->
+<a href="html_images.asp" 
+target="_blank"
+>HTML Images</a>
+<br><br><br>
+
+<!--<a href="default.html" 
+title="Home"
+>Back to Home</a>
+
+-->
+<a href="default.html" 
+title="Home"
+>Back to Home</a>
+<br><br><br>
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+<br><br>
+<img src="img_girl.jpg" alt="Girl in a jacket">
+<br><br>
+<img src="img_chania.jpg" alt="Flowers in Chania">
+<br><br>
+<!--
+    HTML Images Syntax
+The HTML <img> tag is used to embed an image in a web page.
+
+Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+
+The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+The <img> tag has two required attributes:
+
+src - Specifies the path to the image
+alt - Specifies an alternate text for the image
+-->
+
+<img src="url" alt="alternatetext">
+<br>
+<!--
+    Image Size - Width and Height
+You can use the style attribute to specify the width and height of an image.
+-->
+<br>
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+<br><br>
+<!--
+    Alternatively, you can use the width and height attributes:
+-->
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+<br><br>
+<!--
+    Width and Height, or Style?
+The width, height, and style attributes are all valid in HTML.
+
+However, we suggest using the style attribute. It prevents styles sheets from changing the size of images:
+-->
+
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+<br><br><br>
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+
+<br><br><br>
+
+
+
+
 
 
 
