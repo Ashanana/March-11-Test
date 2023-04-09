@@ -29,6 +29,11 @@ p {
 }
 
         </style>
+
+        <!--Example
+Here, an unvisited link will be green with no underline. A visited link will be pink with no underline. An active link will be yellow and underlined. In addition, when mousing over a link (a:hover) it will become red and underlined:
+            
+        -->
         <style>
             a:link {
               color: green;
@@ -54,6 +59,27 @@ p {
               text-decoration: underline;
             }
             </style>
+
+            <!--
+                Link Buttons
+A link can also be styled as a button, by using CSS:
+            -->
+
+            <style>
+                a:link, a:visited {
+                  background-color: #f44336;
+                  color: white;
+                  padding: 15px 25px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                }
+                
+                a:hover, a:active {
+                  background-color: red;
+                }
+                </style>
+
             
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
@@ -312,9 +338,40 @@ JavaScript allows you to specify what happens at certain events, such as a click
             <!--Link to a page located in the same folder as the current page:-->
             <a href="default.asp">HTML tutorial</a>
             <br>
+            <br>
+            
 
+            <!--
+                HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.
 
+Create a Bookmark in HTML
+Bookmarks can be useful if a web page is very long.
 
+To create a bookmark - first create the bookmark, then add a link to it.
+
+When the link is clicked, the page will scroll down or up to the location with the bookmark.
+
+Example
+First, use the id attribute to create a bookmark:
+            -->
+
+            <br>
+            <br>
+
+            <h2 id="C4">Chapter 4</h2>
+            <br>
+            <br>
+            <!--Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:-->
+            <a href="#C4">Jump to Chapter 4</a>
+            <br>
+            <br>
+            <!--
+                You can also add a link to a bookmark on another page:
+            -->
+            <a href="html_demo.html#C4">Jump to Chapter 4</a>
+            <br>
+            <br>
+            
 
 
 
